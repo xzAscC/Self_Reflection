@@ -1,0 +1,19 @@
+# python
+__pycache__/
+*.pyo
+*.pyc
+
+# log files
+*.log
+
+# vscode
+.vscode/
+
+# environment
+.env
+
+# virtual environment
+.venv/
+
+# jupyter notebook
+*.ipynb

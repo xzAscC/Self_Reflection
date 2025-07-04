@@ -1,0 +1,56 @@
+name: "🐛 Bug Report"
+description: "Create a report to help us improve"
+title: "[BUG] <title>"
+labels: ["bug"]
+assignees:
+  - xzascc
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: "What happened?"
+      description: "A clear and concise description of what the bug is. What did you see?"
+      placeholder: "Tell us what you saw!"
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: "Steps to Reproduce"
+      description: "Please provide steps to reproduce the behavior."
+      value: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: "Expected Behavior"
+      description: "A clear and concise description of what you expected to happen."
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: "Operating System"
+      description: "What is the operating system of the machine you are running this on?"
+      options:
+        - "Linux"
+        - "Windows"
+        - "macOS"
+        - "Other"
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Relevant log output"
+      description: "Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks."
+      render: shell
